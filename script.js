@@ -21,19 +21,22 @@ console.log(answers);
 const isChecking = false,
       isClose = false; 
 console.log(isChecking || isClose);*/
-const numberOfFilms = prompt('How many films have you watched?');//№1
+const numberOfFilms = prompt('How many films have you watched?');
+
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
-    privat: false
-};//№2
-const a = prompt('One of the last watched films?', ''),
-      b = prompt('How much would you rate it?', ''),
-      c = prompt('One of the last watched films', ''),
-      d = prompt('How much would you rate it?', '');
+    private: false
+};
+
+const a = prompt('one of the last watched films?'),
+      b = prompt('How much do you rate it'),
+      c = prompt('one of the last watched films?'),
+      d = prompt('How much do you rate it');
 
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
+
 console.log(personalMovieDB);
